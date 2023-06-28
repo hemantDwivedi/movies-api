@@ -1,6 +1,6 @@
-package com.onitotechnogies.moviesapi.movies;
+package com.onitotechnogies.moviesapi.ratings;
 
-import jakarta.persistence.*;
+import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -11,9 +11,9 @@ import lombok.Setter;
 @NoArgsConstructor
 @Setter
 @Getter
-public class Movie {
+public class MovieTopRated {
     private String tconst;
     private String primaryTitle;
-    private Integer runtimeMinutes;
     private String genres;
+    private Double averageRating;
 }
